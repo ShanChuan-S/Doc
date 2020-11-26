@@ -1,0 +1,11 @@
+webpack-cli/bin/config-yargs 解决方案
+
+在项目 npm start 的时候会遇到报错 webpack-cli/bin/config-yargs
+
+解决方案：
+1、命令行执行：npm uninstall webpack-cli
+2、命令行执行：npm install webpack-cli@3.3 --save-dev
+
+原因：
+因为webpack-cli版本4，删除了webpack-cli/bin/config-yargs文件
+所以我们需要重新下载版本3的依赖
